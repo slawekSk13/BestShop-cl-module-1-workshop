@@ -18,8 +18,48 @@
   --color-white: #fff;
   /*JEDNOSTKI*/
   --container-width: 1352px;
+  font-size: 16px;
 }
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+    max-width: var(--container-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+  padding: 1rem 8rem;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.logo {
+  color: var(--color-primary);
+  font-family: var(--secondary-font);
+  font-weight: var(--light);
+}
+
+.header-logo {
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item-link {
+  color: var(--color-grey);
+  font-size: 11px;
+  padding: 25px 12px;
+  font-weight: var(--bold);
+}
+
+.menu-item-link:hover {
+  color: var(--color-black);
+  border-bottom: 4px solid var(--color-primary);
 }
