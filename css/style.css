@@ -32,7 +32,11 @@ body {
 }
 
 .container {
+    margin: 0 auto;
     max-width: var(--container-width);
+}
+
+.flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,9 +79,13 @@ body {
 
 /*CTA SECTION*/
 
-.full-width {
+.section {
     text-align: center;
-    padding-top: 8rem;
+    padding: 8rem 0;
+}
+
+.full-width {
+    padding: 8rem 0 0 0;
 }
 
 .title {
@@ -107,7 +115,6 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
     box-shadow: 5px 10px 14px var(--color-primary-shadow);
 }
 
@@ -115,4 +122,61 @@ body {
     font-size: 22px;
     padding: 1em 8rem;
     border-radius: 40px;
+}
+
+/*BENEFIT SECTION*/
+
+.title-medium {
+    font-size: 2.25rem;
+    line-height: 42px;
+    margin-bottom: 6rem;
+}
+
+.flex-tripple {
+    justify-content: space-around;
+}
+
+.circle {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.icon {
+    width: 2.5rem;
+    position: relative;
+    left: 35%;
+    top: 15%;
+}
+
+.icon-small {
+    width: 4rem;
+    left: 25%;
+    top: 25%;
+}
+
+.background-green {
+    background-color: var(--color-accent-secondary);
+}
+
+.background-redish {
+    background-color: var(--color-accent-primary);
+}
+
+.background-primary {
+    background-color: var(--color-primary);
+}
+
+.title-small {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: var(--black);
+    margin: 1rem;
+}
+
+.text-small {
+    font-family: var(--secondary-font);
+    color: var(--color-grey);
+    line-height: 20px;
 }
