@@ -165,52 +165,98 @@
       <section id="prices" class="section background-white">
         <div class="container">
           <h3 class="title title-medium">Pricing</h3>
-            <div class="flex-container flex-tripple">
-                <article class="price-card price-card-red">
-                    <h4 class="title title-small">
-                        Basic
-                    </h4>
-                    <h5 class="title title-big title-red">$0</h5>
-                    <ul class="price-list">
-                        <li class="price-list-item">100 MB HDD</li>
-                        <li class="price-list-item">1 Subdomain</li>
-                        <li class="price-list-item">2 E-mails</li>
-                        <li class="price-list-item price-list-item-neg">Two years license</li>
-                        <li class="price-list-item price-list-item-neg">Full support</li>
-                    </ul>
-                    <a class="btn btn-small background-redish">Begin</a>
-                </article>
-                <article class="price-card price-card-primary">
-                    <h4 class="title title-small">
-                        Professional
-                    </h4>
-                    <h5 class="title title-big title-primary">$25</h5>
-                    <p class="text price-text">Limited offer</p>
-                    <ul class="price-list">
-                        <li class="price-list-item">100 MB HDD</li>
-                        <li class="price-list-item">1 Subdomain</li>
-                        <li class="price-list-item">2 E-mails</li>
-                        <li class="price-list-item">Two years license</li>
-                        <li class="price-list-item price-list-item-neg">Full support</li>
-                    </ul>
-                    <a class="btn btn-small background-primary btn-primary-position">Begin</a>
-                </article>
-                <article class="price-card price-card-green">
-                    <h4 class="title title-small">
-                        Premium
-                    </h4>
-                    <h5 class="title title-big title-green">$60</h5>
-                    <p class="text price-text">Limited offer</p>
-                    <ul class="price-list">
-                        <li class="price-list-item">100 MB HDD</li>
-                        <li class="price-list-item">1 Subdomain</li>
-                        <li class="price-list-item">2 E-mails</li>
-                        <li class="price-list-item">Two years license</li>
-                        <li class="price-list-item">Full support</li>
-                    </ul>
-                    <a class="btn btn-small background-green">Begin</a>
-                </article>
+          <div class="flex-container flex-tripple">
+            <article class="price-card price-card-red">
+              <h4 class="title title-small">Basic</h4>
+              <h5 class="title title-big title-red">$0</h5>
+              <ul class="price-list">
+                <li class="price-list-item">100 MB HDD</li>
+                <li class="price-list-item">1 Subdomain</li>
+                <li class="price-list-item">2 E-mails</li>
+                <li class="price-list-item price-list-item-neg">
+                  Two years license
+                </li>
+                <li class="price-list-item price-list-item-neg">
+                  Full support
+                </li>
+              </ul>
+              <a class="btn btn-small background-redish">Begin</a>
+            </article>
+            <article class="price-card price-card-primary">
+              <h4 class="title title-small">Professional</h4>
+              <h5 class="title title-big title-primary">$25</h5>
+              <p class="text price-text">Limited offer</p>
+              <ul class="price-list">
+                <li class="price-list-item">100 MB HDD</li>
+                <li class="price-list-item">1 Subdomain</li>
+                <li class="price-list-item">2 E-mails</li>
+                <li class="price-list-item">Two years license</li>
+                <li class="price-list-item price-list-item-neg">
+                  Full support
+                </li>
+              </ul>
+              <a class="btn btn-small background-primary btn-primary-position"
+                >Begin</a
+              >
+            </article>
+            <article class="price-card price-card-green">
+              <h4 class="title title-small">Premium</h4>
+              <h5 class="title title-big title-green">$60</h5>
+              <p class="text price-text">Limited offer</p>
+              <ul class="price-list">
+                <li class="price-list-item">100 MB HDD</li>
+                <li class="price-list-item">1 Subdomain</li>
+                <li class="price-list-item">2 E-mails</li>
+                <li class="price-list-item">Two years license</li>
+                <li class="price-list-item">Full support</li>
+              </ul>
+              <a class="btn btn-small background-green">Begin</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section background-white">
+        <div class="container flex-container">
+          <div class="contact">
+            <h2 class="title title-big">Any questions?</h2>
+            <p class="text">Leave your email address or call us!</p>
+            <a
+              href="mailto:info@bestshop.xyz"
+              class="contact-link contact-link-mail"
+              >info@bestshop.xyz</a
+            >
+            <a href="tel:123456789" class="contact-link contact-link-phone"
+              >123 456 789</a
+            >
+          </div>
+          <form class="contact form">
+            <label for="name" class="label">
+              Name
+              <input id="name" class="form-input" type="text" name="name" />
+            </label>
+            <label for="mail" class="label">
+              Email
+              <input id="mail" class="form-input" type="email" name="mail" />
+            </label>
+            <div class="checkbox-group">
+              <label class="consent" for="consent">
+                <input id="consent" name="consent" type="checkbox" />
+                <span class="checkbox-span"></span>I hereby give consent for my
+                personal data included in my application to be processed for the
+                purposes of the recruitment process under the European
+                Parliament’s and Council of the European Union Regulation on the
+                Protection of Natural Persons as of 27 April 2016, with regard
+                to the processing of personal data and on the free movement of
+                such data, and repealing Directive 95/46/EC (Data Protection
+                Directive)</label
+              >
             </div>
+            <div class="button-wrapper">
+              <button class="btn background-primary btn-medium" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
