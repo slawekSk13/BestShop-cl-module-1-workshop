@@ -204,6 +204,7 @@ body {
 
 .flex-between {
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .border-red::after {
@@ -223,9 +224,6 @@ body {
     width: calc(.35 * 65% / .55);
     height: 3px;
 }
-
-
-/*width: calc(65% * ;*/
 
 .border-primary::after {
     background-color: var(--color-primary);
@@ -280,7 +278,6 @@ body {
 }
 
 .square {
-    padding: 172.5px 0;
     position: relative;
 }
 
@@ -291,7 +288,7 @@ body {
     width: 11rem;
     height: 11rem;
     right: 6rem;
-    top: -2rem;
+    top: 2rem;
 }
 
 .benefit-img-medium {
