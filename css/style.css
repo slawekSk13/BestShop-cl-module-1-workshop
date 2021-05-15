@@ -432,7 +432,7 @@ body {
 }
 
 .form-input {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     width: 100%;
     border: none;
@@ -487,3 +487,25 @@ body {
 }
 
 /*FOOTER*/
+
+.clamp-bottom {
+    padding: 2rem 8rem;
+    box-shadow: 0 -5px 40px #00000029;
+    background-color: var(--color-light-grey);
+}
+
+.copyright {
+    margin-top: .5rem;
+    font-size: 11px;
+    color: var(--color-grey);
+}
+
+.social {
+    display: flex;
+}
+
+.social-icon {
+    width: 1.5rem;
+    margin: .8rem;
+}
+
