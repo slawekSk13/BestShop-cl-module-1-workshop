@@ -17,7 +17,7 @@
     <title>Best Shop</title>
   </head>
   <body>
-    <header class="header">
+    <header class="clamp fixed background-white">
       <div class="container flex-container">
         <a class="logo header-logo" href="#">BestShop</a>
         <nav>
@@ -216,9 +216,9 @@
         </div>
       </section>
       <section id="contact" class="section background-white">
-        <div class="container flex-container">
-          <div class="contact">
-            <h2 class="title title-big">Any questions?</h2>
+        <div class="container flex-container flex-container-center">
+          <div class="contact text-left-aligned">
+            <h2 class="title title-big title-left-aligned">Any questions?</h2>
             <p class="text">Leave your email address or call us!</p>
             <a
               href="mailto:info@bestshop.xyz"
@@ -229,7 +229,7 @@
               >123 456 789</a
             >
           </div>
-          <form class="contact form">
+          <form class="contact form text-left-aligned">
             <label for="name" class="label">
               Name
               <input id="name" class="form-input" type="text" name="name" />
@@ -240,7 +240,12 @@
             </label>
             <div class="checkbox-group">
               <label class="consent" for="consent">
-                <input id="consent" name="consent" type="checkbox" />
+                <input
+                  class="checkbox"
+                  id="consent"
+                  name="consent"
+                  type="checkbox"
+                />
                 <span class="checkbox-span"></span>I hereby give consent for my
                 personal data included in my application to be processed for the
                 purposes of the recruitment process under the European
@@ -252,7 +257,10 @@
               >
             </div>
             <div class="button-wrapper">
-              <button class="btn background-primary btn-medium" type="submit">
+              <button
+                class="btn background-primary btn-medium btn-primary"
+                type="submit"
+              >
                 Send
               </button>
             </div>
@@ -260,5 +268,23 @@
         </div>
       </section>
     </main>
+    <footer class="clamp background-white">
+      <div class="container flex-container">
+        <a class="logo footer-logo" href="#">BestShop</a>
+        <p class="copyright">© 2019 BestShop LTD, All Rights Reserved</p>
+        <ul class="social">
+          <li class="social-item">
+            <a class="social-item-link" href="https://facebook.com"
+              ><img class="social-icon" src="assets/Facebook.svg"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a class="social-item-link" href="https://twitter.com"
+            ><img class="social-icon" src="assets/Twitter.svg"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
