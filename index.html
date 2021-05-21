@@ -2,10 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport"
+          content="width=device-width, initialscale=
+1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,6 +17,8 @@
     <header class="clamp fixed background-white">
       <div class="container flex-container">
         <a class="logo header-logo" href="#">BestShop</a>
+        <label for="hamburger" class="hamburger"></label>
+        <input type="checkbox" id="hamburger" class="hamburger-checkbox">
         <nav>
           <ul class="menu">
             <li class="menu-item">
@@ -43,11 +44,15 @@
         <a class="btn btn-primary btn-big background-primary" href="#"
           >Open your shop</a
         >
+        <picture>
+          <source media="(max-width: 990px)" srcset="assets/Background_mobile.png">
+          <source media="(min-width: 991px)" srcset="assets/Background.png">
         <img
           class="img-full-width"
           src="assets/Background.png"
           alt="Computer typing"
         />
+        </picture>
       </section>
       <section class="section background-white">
         <div class="container">
@@ -90,27 +95,25 @@
               background-round
               flex-container
               background-white
-              padding
-              flex-between
+              padding no-mobile-padding
+              flex-between relative column-mobile
             "
           >
-            <article class="fourth">
+            <article class="fourth order-last-mobile">
               <h3 class="title title-medium">Be always first</h3>
-              <p class="text text-left-aligned border-red">
+              <p class="text text-left-aligned border border-red">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
               </p>
             </article>
             <div class="square-rounded background-redish fourth">
-<!--                          KLOPOT rozmiar obrazka-->
-              <img
-                class="benefit-img-medium"
-                src="assets/Macbook.png"
-                alt="Macbook"
-              />
-              <!--            KLOPOT-->
             </div>
+            <img
+                    class="benefit-img-medium"
+                    src="assets/Macbook.png"
+                    alt="Macbook"
+            />
           </div>
           <div
             class="
@@ -118,12 +121,12 @@
               flex-container
               background-white
               padding
-              flex-between
+              flex-between column-mobile
             "
           >
             <article class="order-last fourth">
               <h3 class="title title-medium">Your shop is where you are!</h3>
-              <p class="text text-left-aligned border-primary">
+              <p class="text text-left-aligned border border-primary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
@@ -137,14 +140,14 @@
               />
             </div>
           </div>
-          <div class="flex-container flex-between">
+          <div class="flex-container flex-between column-mobile">
             <article
               class="background-round background-white padding margin third"
             >
               <h3 class="title title-medium">
                 Increase recognition of your brand!
               </h3>
-              <p class="text text-left-aligned border-green">
+              <p class="text text-left-aligned border border-green">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
@@ -167,8 +170,10 @@
           <h3 class="title title-medium">Pricing</h3>
           <div class="flex-container flex-tripple">
             <article class="price-card price-card-red">
+              <div class="price-card-header">
               <h4 class="title title-small">Basic</h4>
               <h5 class="title title-big title-red">$0</h5>
+              </div>
               <ul class="price-list">
                 <li class="price-list-item">100 MB HDD</li>
                 <li class="price-list-item">1 Subdomain</li>
@@ -183,9 +188,10 @@
               <a class="btn btn-small background-redish">Begin</a>
             </article>
             <article class="price-card price-card-primary">
+              <div class="price-card-header">
               <h4 class="title title-small">Professional</h4>
               <h5 class="title title-big title-primary">$25</h5>
-              <p class="text price-text">Limited offer</p>
+              <p class="text price-text">Limited offer</p> </div>
               <ul class="price-list">
                 <li class="price-list-item">100 MB HDD</li>
                 <li class="price-list-item">1 Subdomain</li>
@@ -200,9 +206,10 @@
               >
             </article>
             <article class="price-card price-card-green">
+              <div class="price-card-header">
               <h4 class="title title-small">Premium</h4>
               <h5 class="title title-big title-green">$60</h5>
-              <p class="text price-text">Limited offer</p>
+              <p class="text price-text">Limited offer</p> </div>
               <ul class="price-list">
                 <li class="price-list-item">100 MB HDD</li>
                 <li class="price-list-item">1 Subdomain</li>
@@ -216,7 +223,7 @@
         </div>
       </section>
       <section id="contact" class="section background-white">
-        <div class="container flex-container flex-container-center">
+        <div class="container flex-container flex-container-center column-mobile">
           <div class="contact text-left-aligned">
             <h2 class="title title-big title-left-aligned">Any questions?</h2>
             <p class="text">Leave your email address or call us!</p>

@@ -386,6 +386,10 @@ body {
 }
 
 /*HEADER*/
+.hamburger, .hamburger-checkbox {
+  display: none;
+}
+
 .clamp {
   padding: 1rem 8rem;
   box-shadow: 0 3px 6px #00000029;
@@ -597,9 +601,10 @@ body {
 }
 
 .circle-big {
-  max-width: 100%;
-  height: 20rem;
-  width: 20rem;
+  max-width: 20rem;
+  max-height: 20rem;
+  height: 50%;
+  width: 50%;
   position: relative;
   left: 3rem;
 }
@@ -626,19 +631,25 @@ body {
 .square-rounded {
   position: relative;
   border-radius: 41px;
-  transform: rotate(-45deg);
-  width: 11rem;
+  transform: rotate(-45deg) translateY(50%);
+  max-width: 11rem;
+  width: 40%;
   height: 11rem;
-  right: 8rem;
-  top: 2rem;
+  right: 15%;
+  top: 50%;
+}
+
+.relative {
+  position: relative;
 }
 
 .benefit-img-medium {
-  transform: rotate(45deg);
-  width: 200%;
-  position: relative;
-  right: 110%;
-  top: -20%;
+  max-width: 22rem;
+  width: 60%;
+  position: absolute;
+  transform: translate(15%, -35%);
+  right: 15%;
+  top: 50%;
 }
 
 /*PRICE SECTION*/
@@ -652,12 +663,6 @@ body {
 
 .price-card-red {
   border-color: #fb3b64;
-}
-
-.price-card-primary {
-  /*border-color: var(--color-primary);*/
-  /*transform: scale(1.2);*/
-  /*box-shadow: 5px 10px 27px var(--color-primary-shadow);*/
 }
 
 .price-card-primary::after {
@@ -712,7 +717,7 @@ body {
 
 .price-list-item::before {
   display: inline-block;
-  content: url("../assets/Ckechmark-1.svg");
+  content: url("../../assets/Ckechmark-1.svg");
   width: 11px;
   height: 11px;
   position: relative;
@@ -720,7 +725,7 @@ body {
 }
 
 .price-list-item-neg::before {
-  content: url("../assets/Close.svg");
+  content: url("../../assets/Close.svg");
 }
 
 /*CONTACT*/
@@ -748,7 +753,7 @@ body {
 }
 
 .contact-link-phone::before {
-  content: url("../assets/Phone Icon.svg");
+  content: url("../../assets/Phone Icon.svg");
   color: #08a6e4;
   width: 1.2rem;
   margin-right: 10px;
@@ -758,7 +763,7 @@ body {
 }
 
 .contact-link-mail::before {
-  content: url("../assets/Mail Icon.svg");
+  content: url("../../assets/Mail Icon.svg");
   color: #08a6e4;
   width: 1.2rem;
   margin-right: 10px;
@@ -801,7 +806,7 @@ body {
 }
 
 .consent input:checked + span {
-  background: transparent url("../assets/Checkmark.svg") 0 0 no-repeat padding-box;
+  background: transparent url("../../assets/Checkmark.svg") 0 0 no-repeat padding-box;
   background-size: 15px 15px;
   background-position: center;
 }
@@ -841,5 +846,249 @@ body {
 .social-icon {
   width: 1.5rem;
   margin: 0.8rem;
+}
+
+.hamburger {
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid #08a6e4;
+  background: transparent;
+  position: relative;
+  transition: 0.3s transform linear;
+}
+.hamburger::after, .hamburger::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid #08a6e4;
+  transform: translateY(10px);
+}
+.hamburger::after {
+  transform: translateY(25px);
+  transition: 0.3s transform linear;
+}
+
+@media (max-width: 990px) {
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 67px;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 3px 3px 6px #00000029;
+  }
+  .menu-item {
+    padding: 0.4rem;
+  }
+  .menu-item-link {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .menu-item-link:hover {
+    color: #000;
+    border: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .hamburger-checkbox:checked + nav {
+    display: block;
+  }
+
+  .clamp {
+    max-width: 100vw;
+    padding: 1rem;
+  }
+
+  .btn-big {
+    width: 80%;
+    padding: 1rem 0 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .text {
+    padding: 0 2rem;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  main {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .title-medium {
+    margin-bottom: 3rem;
+    padding: 0 3rem;
+  }
+
+  .flex-tripple {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit {
+    margin-bottom: 2rem;
+  }
+
+  .section.background-grey {
+    padding: 2rem;
+  }
+
+  .column-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle-big {
+    left: 0;
+    margin-bottom: 4rem;
+  }
+
+  .fourth, .third {
+    width: 100%;
+  }
+
+  .third {
+    margin-bottom: 0;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .border::after {
+    display: none;
+  }
+
+  .square {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 500px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .order-last-mobile {
+    order: 2;
+  }
+
+  .square-rounded {
+    bottom: 30px;
+    right: -40px;
+    margin-bottom: 200px;
+    margin-top: 50px;
+  }
+
+  .benefit-img-medium {
+    max-width: 22rem;
+    width: 100%;
+    position: absolute;
+    transform: translate(-15%);
+    left: 30%;
+    top: 20%;
+  }
+
+  .no-mobile-padding {
+    padding: 0;
+  }
+
+  .benefit-img-big {
+    width: 120%;
+  }
+
+  .clamp-bottom {
+    padding: 2rem 1rem;
+  }
+
+  .title-left-aligned {
+    margin: 1.5rem;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
+  .contact-link {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+  .contact-link-phone::before {
+    margin: 0 10px 0 0;
+  }
+
+  .form {
+    margin-top: 2rem;
+  }
+
+  .btn-medium {
+    margin-top: 2rem;
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  .text-small {
+    font-size: 1.6rem;
+  }
+
+  .title-small {
+    font-size: 1.9rem;
+  }
+
+  .price-card {
+    padding: 0 0 3rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  .price-card-primary {
+    margin: 4rem auto 6rem;
+  }
+  .price-card-primary .btn-primary-position {
+    bottom: -50px;
+    z-index: 5;
+  }
+  .price-card-header .title-small, .price-card-header .title-big {
+    margin: 1rem;
+  }
+
+  .price-list-item::before {
+    right: 0.3rem;
+  }
+}
+@media (max-width: 550px) {
+  .price-card-header .title-small {
+    font-size: 1.4rem;
+  }
+  .price-card-header .title-big {
+    font-size: 2rem;
+  }
+
+  .square-rounded {
+    bottom: 7px;
+    right: 50px;
+  }
+
+  .benefit-img-medium {
+    left: 13.5%;
+  }
+
+  .circle-big {
+    left: 0;
+    margin-bottom: 4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

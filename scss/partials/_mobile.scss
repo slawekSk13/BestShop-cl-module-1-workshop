@@ -1,0 +1,210 @@
+@media (max-width: 990px) {
+   nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 67px;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 3px 3px 6px #00000029;
+    &-item {
+      padding: .4rem;
+      &-link{
+        font-size: 1.2rem;
+        padding: 0;
+        &:hover {
+          color: $color-black;
+          border: none;
+        }
+      }
+    }
+  }
+  .hamburger {
+    display: inline-block;
+    margin-left: auto;
+  }
+  .hamburger-checkbox:checked + nav {
+    display: block;
+  }
+  .clamp {
+    max-width: 100vw;
+    padding: 1rem;
+  }
+
+  .btn-big {
+    width: 80%;
+    padding: 1rem 0 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .text {
+  padding: 0 2rem;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  main {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .title-medium {
+  margin-bottom: 3rem;
+    padding: 0 3rem;
+  }
+
+  .flex-tripple {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit {
+    margin-bottom: 2rem;
+  }
+
+  .section.background-grey {
+    padding: 2rem;
+  }
+
+  .column-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .circle-big {
+    left: 0;
+    margin-bottom: 4rem;
+  }
+
+  .fourth, .third {
+    width: 100%;
+  }
+
+  .third {
+    margin-bottom: 0;
+    border-radius: 5px 5px 0 0;
+  }
+  .border::after {
+    display: none;
+  }
+
+  .square {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 500px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .order-last-mobile {
+    order: 2;
+  }
+
+  .square-rounded {
+    bottom: 30px;
+    right: -40px;
+    margin-bottom: 200px;
+    margin-top: 50px;
+  }
+
+  .benefit-img-medium {
+    max-width: 22rem;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%% -35%);
+    left: 30%;
+    top: 20%;
+  }
+
+  .no-mobile-padding {
+    padding: 0;
+  }
+
+  .benefit-img-big {
+    width: 120%;
+  }
+
+  .clamp-bottom {
+    padding: 2rem 1rem;
+  }
+  .title-left-aligned {
+    margin: 1.5rem;
+  }
+  .contact {
+    width: 90%;
+  }
+  .contact-link {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    &-phone::before {
+      margin: 0 10px 0 0;
+    }
+  }
+  .form {
+    margin-top: 2rem;
+  }
+  .btn-medium {
+    margin-top: 2rem;
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  .text-small {
+    font-size: 1.6rem;
+  }
+
+  .title-small {
+    font-size: 1.9rem;
+  }
+  .price-card {
+    padding: 0 0 3rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    &-primary {
+      margin: 4rem auto 6rem;
+      .btn-primary-position {
+        bottom: -50px;
+        z-index: 5;
+      }
+      &::after {
+        //transform: scaleY(1);
+      }
+    }
+  }
+  .price-card-header {
+    .title-small, .title-big {
+      margin: 1rem;
+    }
+  }
+  .price-list-item::before {
+    right: .3rem
+  }
+}
+@media (max-width: 550px) {
+  .price-card-header {
+    .title-small {
+      font-size: 1.4rem;
+    }
+    .title-big {
+      font-size: 2rem;
+    }
+  }
+.square-rounded {
+  bottom: 7px;
+  right: 50px;
+}
+  .benefit-img-medium {
+    left: 13.5%;
+  }
+  .circle-big {
+    left: 0;
+    margin-bottom: 4rem;
+  }
+}

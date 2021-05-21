@@ -1,0 +1,30 @@
+.hamburger {
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid $color-primary;
+  background: transparent;
+  position: relative;
+  transition: .3s transform linear;
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid $color-primary;
+    transform: translateY(10px);
+  }
+  &::after {
+    transform: translateY(25px);
+    transition: .3s transform linear;
+  }
+  }
+//.hamburger-checkbox:checked {
+//  transform: rotate(45deg) translateY(5px);
+//  border: none;
+//  &::after {
+//    transform: rotate(-90deg) translateX(-10px);
+//}
+//  }
+
