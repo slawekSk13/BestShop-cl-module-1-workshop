@@ -1,29 +1,11 @@
-:root {
-  /*FONTY*/
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
-  /*FONT WEIGHT*/
-  --light: 300;
-  --regular: 400;
-  --bold: 700;
-  --black: 800;
-  /*KOLORY*/
-  --color-primary: #08a6e4;
-  --color-primary-shadow: rgba(7, 172, 230, 0.16);
-  --color-accent-primary: #fb3b64;
-  --color-accent-secondary: #55dfb4;
-  --color-black: #000;
-  --color-grey: #a5a5a5;
-  --color-light-grey: #f7f7f7;
-  --color-white: #fff;
-  /*JEDNOSTKI*/
-  --container-width: 1352px;
-  font-size: 16px;
-}
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/mobile";
+
 
 body {
-  font-family: var(--primary-font);
-  color: var(--color-black);
+  font-family: $primary-font;
+  color: $color-black;
 }
 
 * {
@@ -33,7 +15,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: var(--container-width);
+  max-width: $container-width;
 }
 
 .flex-container {
@@ -47,6 +29,7 @@ body {
 .clamp {
   padding: 1rem 8rem;
   box-shadow: 0 3px 6px #00000029;
+  max-width: 100%;
 }
 
 .fixed {
@@ -56,9 +39,9 @@ body {
 }
 
 .logo {
-  color: var(--color-primary);
-  font-family: var(--secondary-font);
-  font-weight: var(--light);
+  color: $color-primary;
+  font-family: $secondary-font;
+  font-weight: $light;
 }
 
 .header-logo {
@@ -70,17 +53,17 @@ body {
 }
 
 .menu-item-link {
-  color: var(--color-grey);
+  color: $color-grey;
   font-size: 11px;
   padding: 20px 12px;
-  font-weight: var(--bold);
+  font-weight: $bold;
   letter-spacing: 3px;
   line-height: 15px;
 }
 
 .menu-item-link:hover {
-  color: var(--color-black);
-  border-bottom: 4px solid var(--color-primary);
+  color: $color-black;
+  border-bottom: 4px solid $color-primary;
 }
 
 /*CTA SECTION*/
@@ -95,8 +78,8 @@ body {
 }
 
 .title {
-  font-family: var(--secondary-font);
-  font-weight: var(--regular);
+  font-family: $secondary-font;
+  font-weight: $regular;
 }
 
 .title-big {
@@ -116,12 +99,12 @@ body {
 
 .btn {
   display: inline-block;
-  color: var(--color-white);
+  color: $color-white;
   cursor: pointer;
 }
 
 .btn-primary {
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  box-shadow: 5px 10px 14px $color-primary-shadow;
 }
 
 .btn-big {
@@ -165,38 +148,38 @@ body {
 }
 
 .background-green {
-  background-color: var(--color-accent-secondary);
+  background-color: $color-accent-secondary;
 }
 
 .background-redish {
-  background-color: var(--color-accent-primary);
+  background-color: $color-accent-primary;
 }
 
 .background-primary {
-  background-color: var(--color-primary);
+  background-color: $color-primary;
 }
 
 .background-white {
-  background-color: var(--color-white);
+  background-color: $color-white;
 }
 
 .title-small {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  font-weight: var(--black);
+  font-weight: $black;
   margin: 1rem;
 }
 
 .text-small {
-  font-family: var(--secondary-font);
-  color: var(--color-grey);
+  font-family: $secondary-font;
+  color: $color-grey;
   line-height: 20px;
 }
 
 /*BENEFITS SECTION*/
 
 .background-grey {
-  background-color: var(--color-light-grey);
+  background-color: $color-light-grey;
 }
 
 .padding {
@@ -214,7 +197,7 @@ body {
 }
 
 .border-red::after {
-  background-color: var(--color-accent-primary);
+  background-color: $color-accent-primary;
   margin-top: 4rem;
   display: block;
   content: " ";
@@ -223,7 +206,7 @@ body {
 }
 
 .border-green::after {
-  background-color: var(--color-accent-secondary);
+  background-color: $color-accent-secondary;
   margin-top: 4rem;
   display: block;
   content: " ";
@@ -232,7 +215,7 @@ body {
 }
 
 .border-primary::after {
-  background-color: var(--color-primary);
+  background-color: $color-primary;
   margin-top: 4rem;
   display: block;
   content: " ";
@@ -246,10 +229,6 @@ body {
 
 .third {
   width: 55%;
-}
-
-.benefit-img-medium {
-  width: 130%;
 }
 
 .background-round {
@@ -293,7 +272,7 @@ body {
   transform: rotate(-45deg);
   width: 11rem;
   height: 11rem;
-  right: 6rem;
+  right: 8rem;
   top: 2rem;
 }
 
@@ -315,7 +294,7 @@ body {
 }
 
 .price-card-red {
-  border-color: var(--color-accent-primary);
+  border-color: $color-accent-primary;
 }
 
 .price-card-primary {
@@ -332,14 +311,14 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 18px;
-  border: 1px solid var(--color-primary);
+  border: 1px solid $color-primary;
   transform-origin: 0 0;
   transform: scale(1.2);
-  box-shadow: 5px 10px 27px var(--color-primary-shadow);
+  box-shadow: 5px 10px 27px $color-primary-shadow;
 }
 
 .price-card-green {
-  border-color: var(--color-accent-secondary);
+  border-color: $color-accent-secondary;
 }
 
 .btn-small {
@@ -358,15 +337,15 @@ body {
 }
 
 .title-red {
-  color: var(--color-accent-primary);
+  color: $color-accent-primary;
 }
 
 .title-primary {
-  color: var(--color-primary);
+  color: $color-primary;
 }
 
 .title-green {
-  color: var(--color-accent-secondary);
+  color: $color-accent-secondary;
 }
 
 .price-list-item {
@@ -390,7 +369,7 @@ body {
 /*CONTACT*/
 
 .label {
-  color: var(--color-primary);
+  color: $color-primary;
 }
 
 .flex-container-center {
@@ -408,13 +387,13 @@ body {
 }
 
 .contact-link {
-    color: var(--color-grey);
+    color: $color-grey;
     line-height: 22px;
 }
 
 .contact-link-phone::before {
     content: url("../assets/Phone Icon.svg");
-    color: var(--color-primary);
+    color: $color-primary;
     width: 1.2rem;
     margin-right: 10px;
     margin-left: 20px;
@@ -424,7 +403,7 @@ body {
 
 .contact-link-mail::before {
     content: url("../assets/Mail Icon.svg");
-    color: var(--color-primary);
+    color: $color-primary;
     width: 1.2rem;
     margin-right: 10px;
     position: relative;
@@ -436,9 +415,9 @@ body {
     margin-bottom: 2rem;
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--color-grey);
-    color: var(--color-grey);
-    font-family: var(--primary-font);
+    border-bottom: 1px solid $color-grey;
+    color: $color-grey;
+    font-family: $primary-font;
     font-size: 1rem;
     text-transform: uppercase;
     padding: 0;
@@ -451,7 +430,7 @@ body {
 .consent {
     display: flex;
     font-size: 12px;
-    color: var(--color-grey);
+    color: $color-grey;
     font-weight: 200;
 }
 
@@ -462,7 +441,7 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 4px;
-    border: 1px solid var(--color-grey);
+    border: 1px solid $color-grey;
 }
 
 .consent input:checked + span {
@@ -489,15 +468,16 @@ body {
 /*FOOTER*/
 
 .clamp-bottom {
+  max-width: 100%;
     padding: 2rem 8rem;
     box-shadow: 0 -5px 40px #00000029;
-    background-color: var(--color-light-grey);
+    background-color: $color-light-grey;
 }
 
 .copyright {
     margin-top: .5rem;
     font-size: 11px;
-    color: var(--color-grey);
+    color: $color-grey;
 }
 
 .social {
@@ -508,4 +488,3 @@ body {
     width: 1.5rem;
     margin: .8rem;
 }
-
