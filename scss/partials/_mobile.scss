@@ -26,7 +26,7 @@
     display: inline-block;
     margin-left: auto;
   }
-  .hamburger-checkbox:checked + nav {
+  .hamburger-checkbox:checked ~ nav {
     display: block;
   }
   .clamp {

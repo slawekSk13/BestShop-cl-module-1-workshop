@@ -871,6 +871,14 @@ body {
   transition: 0.3s transform linear;
 }
 
+.hamburger-checkbox:checked ~ .hamburger {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+}
+.hamburger-checkbox:checked ~ .hamburger::after {
+  transform: rotate(-90deg) translateX(-10px);
+}
+
 @media (max-width: 990px) {
   nav {
     display: none;
@@ -902,7 +910,7 @@ body {
     margin-left: auto;
   }
 
-  .hamburger-checkbox:checked + nav {
+  .hamburger-checkbox:checked ~ nav {
     display: block;
   }
 

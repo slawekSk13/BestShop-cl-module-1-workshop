@@ -20,11 +20,13 @@
     transition: .3s transform linear;
   }
   }
-//.hamburger-checkbox:checked {
-//  transform: rotate(45deg) translateY(5px);
-//  border: none;
-//  &::after {
-//    transform: rotate(-90deg) translateX(-10px);
-//}
-//  }
+
+.hamburger-checkbox:checked ~ .hamburger
+{
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+  &::after {
+    transform: rotate(-90deg) translateX(-10px);
+}
+  }
 
